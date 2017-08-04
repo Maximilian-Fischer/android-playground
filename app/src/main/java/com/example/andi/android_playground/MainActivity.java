@@ -74,9 +74,6 @@ public class MainActivity extends AppCompatActivity {
         int first = 0;
         int second = 0;
 
-        editFirstNumber.getText().toString().isEmpty();
-
-
         if(editFirstNumber.getText().toString().isEmpty() || editSecondNumber.getText().toString().isEmpty()){
             editResult.setText("0");
             return;
@@ -87,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
             second = Integer.valueOf(editSecondNumber.getText().toString());
 
         } catch (NumberFormatException ex) {
-            System.out.println("ERROR: NumberFormatException");
             editResult.setText("0");
             return;
         }
