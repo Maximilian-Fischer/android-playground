@@ -11,6 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="46dp"
         android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="59dp"
         android:ems="10"
         android:inputType="number"
@@ -18,18 +19,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-        app:layout_constraintRight_toLeftOf="@+id/editSecondNumber"
-        app:layout_constraintLeft_toRightOf="@+id/editFirstNumber"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginTop="71dp"
+        android:text="@string/add_symbol"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
         app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="71dp" />
+        app:layout_constraintLeft_toRightOf="@+id/editFirstNumber"
+        app:layout_constraintRight_toLeftOf="@+id/editSecondNumber"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editSecondNumber"
@@ -40,20 +41,21 @@
         app:layout_constraintTop_toTopOf="@+id/editFirstNumber"
         android:layout_marginTop="0dp"
         android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClickAbout"
-        android:text="About"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginRight="8dp"
+        android:onClick="onClickAbout"
+        android:text="@string/about"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
         android:id="@+id/editResult"
@@ -63,12 +65,12 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="95dp"
         android:ems="10"
-        android:hint="0"
+        android:hint="@string/result_default"
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdd" />
 
 </android.support.constraint.ConstraintLayout>
