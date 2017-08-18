@@ -17,6 +17,6 @@ public class CalculatorTest {
 
         long result = mainActivity.calculate(40,2);
 
-        assertEquals(44l, result);
+        assertEquals(42l, result);
     }
 }

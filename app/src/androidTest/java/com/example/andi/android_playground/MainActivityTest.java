@@ -37,7 +37,7 @@ public class MainActivityTest {
 
     @Test
     public void testSwitchToAboutActivity(){
-        onView(withId(R.id.buttonAbout)).perform(click());
+        //onView(withId(R.id.buttonAbout)).perform(click());
         intended(hasComponent(AboutActivity.class.getName()));
     }
 
