@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+ext.versionMajor = 1
+ext.versionMinor = 4
+ext.versionPatch = 0
+ext.jenkinsBuildNumber = Integer.valueOf(System.env.BUILD_NUMBER ?: 0)
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
@@ -7,8 +12,8 @@ android {
         applicationId "com.example.android_playground"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionName computeVersionName()
+        versionCode computeVersionCode()
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -16,7 +21,20 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix " (build ${jenkinsBuildNumber})"
+        }
     }
+}
+
+// Returns name based on version values, e.g. '1.4.0'
+def computeVersionName() {
+    return "${versionMajor}.${versionMinor}.${versionPatch}"
+}
+// Returns auto-incrementing value, e.g 140017 for Jekins build #17
+def computeVersionCode() {
+    return (versionMajor * 100000) + (versionMinor * 10000) + (versionPatch * 1000) + jenkinsBuildNumber
 }
 
 dependencies {
