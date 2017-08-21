@@ -1,4 +1,4 @@
-package com.example.andi.android_playground;
+package com.example.android_playground;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.andi.android_playground", appContext.getPackageName());
+        assertEquals("com.example.android_playground", appContext.getPackageName());
     }
 }

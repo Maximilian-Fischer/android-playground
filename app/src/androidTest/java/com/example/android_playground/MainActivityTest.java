@@ -1,4 +1,4 @@
-package com.example.andi.android_playground;
+package com.example.android_playground;
 
 import android.support.test.espresso.intent.rule.IntentsTestRule;
 import android.support.test.filters.LargeTest;

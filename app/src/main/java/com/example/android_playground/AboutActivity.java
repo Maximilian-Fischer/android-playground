@@ -1,4 +1,4 @@
-package com.example.andi.android_playground;
+package com.example.android_playground;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
