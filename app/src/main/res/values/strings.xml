@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android-Playground</string>
+    <string name="app_name">OSR Playground</string>
     <string name="about_text">About this app....\n\nThis is a example app that serves as test app for the awesome Android Continuous Delivery Pipeline DSL.</string>
     <string name="add_symbol">+</string>
     <string name="about">About</string>

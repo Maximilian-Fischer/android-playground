@@ -1,4 +1,4 @@
-package de.awesome.android_playground;
+package de.awesome.osr_playground;
 
 import android.support.test.espresso.intent.rule.IntentsTestRule;
 import android.support.test.filters.LargeTest;

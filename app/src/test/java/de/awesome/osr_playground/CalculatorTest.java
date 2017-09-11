@@ -1,4 +1,4 @@
-package de.awesome.android_playground;
+package de.awesome.osr_playground;
 
 import org.junit.Test;
 

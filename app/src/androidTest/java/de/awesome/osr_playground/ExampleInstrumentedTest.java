@@ -1,4 +1,4 @@
-package de.awesome.android_playground;
+package de.awesome.osr_playground;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("de.awesome.android_playground", appContext.getPackageName());
+        assertEquals("de.awesome.osr_playground", appContext.getPackageName());
     }
 }
