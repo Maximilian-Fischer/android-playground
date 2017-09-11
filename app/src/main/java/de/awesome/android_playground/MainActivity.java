@@ -1,4 +1,4 @@
-package com.example.android_playground;
+package de.awesome.android_playground;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 ext.versionMajor = 1
-ext.versionMinor = 4
+ext.versionMinor = 0
 ext.versionPatch = 0
 ext.jenkinsBuildNumber = Integer.valueOf(System.env.BUILD_NUMBER ?: 0)
 
@@ -9,7 +9,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "com.example.android_playground"
+        applicationId "de.awesome.android_playground"
         minSdkVersion 15
         targetSdkVersion 25
         versionName computeVersionName()
